@@ -1,0 +1,178 @@
+.page {
+  width: 760px;
+  height: 500px;
+  margin: 30px auto;
+  border: 2px solid #000;
+  background: #fff;
+  font-family: Arial, Tahoma, sans-serif;
+  position: relative;
+}
+
+.header {
+  height: 32px;
+  line-height: 32px;
+  background: #00b050;
+  border-bottom: 2px solid #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  margin-left: 55px;
+  gap: 12px;
+}
+
+.form-row label {
+  font-size: 14px;
+  width: 70px;
+}
+
+.form-row input {
+  width: 470px;
+  height: 30px;
+  border: 1px solid #222;
+  padding: 0 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-row input::placeholder {
+  color: #bfbfbf;
+  font-weight: bold;
+}
+
+.add-btn {
+  width: 62px;
+  height: 30px;
+  background: #4472c4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.error-message {
+  width: 640px;
+  margin: 8px auto;
+  color: red;
+  font-size: 13px;
+}
+
+.table-wrap {
+  width: 640px;
+  margin: 12px auto 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+th {
+  background: #00a6d6;
+  border: 1px solid #000;
+  height: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #000;
+  height: 34px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.col-id {
+  width: 55px;
+}
+
+.col-code {
+  width: 190px;
+}
+
+.col-barcode {
+  width: 315px;
+}
+
+.col-action {
+  width: 80px;
+}
+
+.barcode {
+  width: 190px;
+  height: 28px;
+  display: block;
+  margin: 2px auto;
+}
+
+.delete-btn {
+  width: 48px;
+  height: 23px;
+  background: #ff0000;
+  color: #fff;
+  border: 1px solid #0070c0;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Confirm Popup */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(190, 190, 190, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 95px;
+  z-index: 9999;
+}
+
+.confirm-box {
+  width: 405px;
+  height: 125px;
+  background: white;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  padding: 28px 15px 12px;
+}
+
+.confirm-message {
+  font-size: 14px;
+  color: #000;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 34px;
+}
+
+.confirm-btn,
+.cancel-btn {
+  width: 64px;
+  height: 25px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background: #0070c0;
+}
+
+.cancel-btn {
+  background: #ff0000;
+}

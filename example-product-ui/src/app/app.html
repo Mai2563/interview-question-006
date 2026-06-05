@@ -1,0 +1,72 @@
+<div class="page">
+  <div class="header">IT 06</div>
+
+  <div class="form-row">
+    <label>รหัสสินค้า</label>
+
+    <input
+      type="text"
+      placeholder="XXXX-XXXX-XXXX-XXXX"
+      [(ngModel)]="productCode"
+      maxlength="19"
+    />
+
+    <button class="add-btn" (click)="addProductCode()">ADD</button>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="col-id">Id</th>
+          <th class="col-code">รหัสสินค้า (16 หลัก)</th>
+          <th class="col-barcode">บาร์โค้ดสินค้า</th>
+          <th class="col-action">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let item of productCodes; let i = index">
+          <td>{{ i + 1 }}</td>
+
+          <td>{{ item.code }}</td>
+
+          <td>
+            <svg
+              #barcodeSvg
+              class="barcode"
+              [attr.data-code]="item.code">
+            </svg>
+          </td>
+
+          <td>
+            <button class="delete-btn" (click)="openDeleteModal(item)">
+              ลบ
+            </button>
+          </td>
+        </tr>
+
+        <tr *ngIf="productCodes.length === 0">
+          <td colspan="4">ไม่มีข้อมูล</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="modal-backdrop" *ngIf="showDeleteModal">
+    <div class="confirm-box">
+      <div class="confirm-message">
+        ต้องการลบข้อมูล รหัสสินค้า {{ selectedDeleteItem?.code }} หรือไม่ ?
+      </div>
+
+      <div class="confirm-actions">
+        <button class="confirm-btn" (click)="confirmDelete()">ตกลง</button>
+        <button class="cancel-btn" (click)="closeDeleteModal()">ยกเลิก</button>
+      </div>
+    </div>
+  </div>
+</div>
