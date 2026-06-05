@@ -72,6 +72,8 @@ Library:
 
 ## 🌐 API Endpoints
 
+<img width="337" height="224" alt="Capture3" src="https://github.com/user-attachments/assets/1cacff2e-4303-47a0-afbc-cecced7f6617" />
+
 ### Get Product Codes
 
 ```http
@@ -176,7 +178,8 @@ http://localhost:4200
 
 ### Main Screen
 
-> Add application screenshot here
+<img width="796" height="533" alt="Capture" src="https://github.com/user-attachments/assets/98f74a7b-cf08-4648-9e5f-c0026c7fc2fb" />
+<img width="785" height="525" alt="Capture2" src="https://github.com/user-attachments/assets/68584fd4-d6e1-4cf6-bd3a-ac37b009d3ac" />
 
 ---
 
