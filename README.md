@@ -22,7 +22,7 @@ This application was developed based on the technical assignment requirements.
 
 ### 🔹 Backend
 
-* ASP.NET Core 8 Web API
+* ASP.NET 8 Web API
 * Entity Framework Core
 * SQL Server Express
 
